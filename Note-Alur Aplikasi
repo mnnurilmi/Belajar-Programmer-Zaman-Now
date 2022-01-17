@@ -1,0 +1,18 @@
+Step
+1. BRD (Business REquirment Document):
+    -spesifikasi
+    -Fitur
+    -Alur Aplikasi, daeri segi bisnis
+2. UI/ UX:
+    -Pembuatan masing-masing page
+    -Pembuatan interaksi antar page
+3. Technical Design:
+    -Flow secara teknis
+    -ERD(Entity relationship Diagram)
+4. Architecture Review:
+    -Semua orang berkumpul:
+        tim infrastuktur,security, development berkumpul dan direview
+        -Tech design direview ulang
+        -memaastikan semua yang direncanakan sudah baik
+5. 
+
