@@ -1,0 +1,53 @@
+Alur Pembuatan Aplikasi
+youtube.com/watch?v=3PMLwe_C-F0
+********************************************************
+1. BRD (Business REquirment Document):
+    -spesifikasi
+    -Fitur
+    -Alur Aplikasi, daeri segi bisnis
+2. UI/ UX:
+    -Pembuatan masing-masing page
+    -Pembuatan interaksi antar page
+3. Technical Design:
+    -Flow secara teknis
+    -ERD(Entity relationship Diagram)
+4. Architecture Review:
+    -Semua orang berkumpul:
+        tim infrastuktur,security, development berkumpul dan direview
+        -Tech design direview ulang
+        -memaastikan semua yang direncanakan sudah baik
+        -spec server dan traffic direview
+        -Feedback akan jadi acuan perbaikan ke technical design
+ 5. Diskusi spesifikasi API
+    -Dilakukan sebelum deployment dalam bentuk codingan
+    -Based on UI/UX
+    -Yang diperhatikan:
+        data, request,
+    -contoh:
+        GET /api/Products/id
+        GET /api/banners/
+    -List jumlah API, contoh: 20 API
+    -API harus mencakup setiap page
+6. Development
+    -Semua bagian bekerja (frontend, backend, QA)
+    -berdasarkan APi yang disepakati
+    -Lakuin unit test
+7. Non production deployment
+    -environment:   Dev, QA automation, stagging, sandbox
+    -Buat CI/CD
+    -dirilis, misal dibikin tag di GIT
+8. Testing
+    -End-to-end test(ex:happy flow), performance test, security test,dll.
+    -Testing di envorinment non production
+9. Production deployment
+    -Deploy aplikasi ke production
+    -Contoh strategi:
+        produk baru dirilis
+        sebagian produk dirilis
+        misal, user 1 -- 1jt dikasih fitur tertentu
+10. Maintanance/Improvement
+    -improvement dilakukan dari tahap BRD sampai deployment
+    - Maintanance:
+        -Cek gejala
+        -Monitoring aplikasi(total data, total traffic,response time,dsb.,)
+            menggunakan tool tertentu
