@@ -1,0 +1,116 @@
+Rangkuman dari Programmeer Zaman Now
+https://www.youtube.com/watch?v=jiUxHm9l1KY
+********************************************************************************
+-Bahasa pemrograman berorientasi objek
+-terkenal dengan write once run anywhere
+-binary program digenerate secara independen
+-Harus menginstall java virtual machine (JVM)
+-jenis: java standard edition, 
+        java enterprise edition (untuk perusahaan), 
+        java micro edition (aplikasi mobile)
+- Java terkini versi 16 (java 16)
+
+//Teknologi
+
+JDK (Java development kit)    : digunakan saat aplikasi sedang de-develop
+JRE (Java runtime environment): -digunakan saat apliakasi sudah jadi
+                                - dijalankan diserver
+
+//Java virtual machine
+-Program untuk mengeksekusi binary file java
+-Turunan: Kotlin, Skala
+
+//Tipe Data Primitif
+-Number:    1. integer
+                    byte inibyte    =100;
+                    short inishort = 1000;
+                    int iniint      =1000000000;
+                    long inilong    = 1000000000L;
+            2. float
+                    float inifloat      = 10.12f;
+                    double inidouble    = 12.2424;
+            3. literals
+                    int decimalInt = 25;
+                    int hexInt     = 0xA132B;
+                    int binInt     = 0b01010101;
+            Konversi (otomatis): byte->short->int->long->float->double
+            Konversi (manual): kebalikannya
+-Charakter: char    , tanda petik ('')
+-Boolean  : boolean , True or False
+
+//Tipe Data Non Primitif
+-String   : String  , petik dua ("")
+-var      :     Tipe data fleksibel
+                harus mengisi valuenya, contoh
+                        var firstName = "ilmi"
+
+//Kata Kunci final(Konstan)
+
+//Primitif vs Non Primitif
+-Tipe data non primitif bisa punya methon sendiri
+-Tipe data primitif memiliki nilai inisialisasi sesuai tipenya
+-TIpe data non primitif seringnya diinisialisasi null
+        Primitif        | Non Primitif
+        *******************************
+        int             | int
+        char            | Character
+        float           | Float
+        byte            | Byte
+        short           | Short
+        long            | Long
+        double          | Double
+        boolean         | Boolean
+
+//Tipe data Array (Larik)
+-merupakan tipe data yang berisikan kumpulan data dengan tipe sama
+- Di java jumlahnya tidak bisa diubah
+- Diubah harus menggunakan Dynamic Programming
+-array inisialisasi
+        int[] arrayInt = new int[]{
+                 1,2,3,4,5
+        };
+-array 2 dimensi
+        String [][] members = {
+                {"Eko", "kurniawan"},
+                {"budi", "raharjo"}
+        };
+
+//Operasi Matematika
++,-,*,/,%
++=, -=, *=, /=, %=
+unry:   ++, --, -, +, !
+
+//Operasi Perbandingan & Boolean
+>, <, >=, <=, ==, !=
+&&. ||, !
+
+
+//Ketentuan
+-Menulis Class, setiap kata diawali kapital, contoh SayHelloWorld
+-Menulis method, contoh: sayHelloWorld
+
+//Method
+-Procedure: void
+-Function : int,float, char, dsb.
+
+//Method overloading
+-kemampuan membuat method dnegan nama yang sama lebih dari sekali
+-syaratnya adalah data parameter harus berbeda berbeda, entah jumlah atau tidpe data
+
+//Recursive
+-kemampuan method memanggil method dirinya sendiri
+-Walaupun asik, bila terlalu dalam maka akan terjadi error stackoverflow
+-contoh kasus faktorial
+
+//Scope
+-variabel berdasarkan di dalam scope/blok
+
+
+
+
+
+
+
+
+
+
