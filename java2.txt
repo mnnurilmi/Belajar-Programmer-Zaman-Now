@@ -1,0 +1,100 @@
+Java OOP
+https://www.youtube.com/watch?v=f3ZhNnvtV-w
+*******************************************************
+//Pengenalan OOP
+-Sudut pandang bahasa pemograman yang menitik beratkan kepada objek
+-Salah satu Paradigma pemograman
+-Objek: Data yang berisi field/properti/atribut dan method/function/behavior
+-Tipe data non primitif adalah tipe data objek
+-Class: Blueprint/cetakan untuk membuat objek
+-Penamaan Class harus  diawali huruf kapital
+
+//Membuat objek
+-diawali dengan kata kunci "new"
+-contoh,
+    var person1 = new Person();
+    Person person2 = new Person();
+
+    Person person3;
+    person3 = new Person();
+
+//Field,Properti,atribut
+-adalah daya yang bisa disisipkan dalam objek-sebelum dimasukkan kke field, data dalam objek harus dideklarasikan
+-field dalam objek dapat dimanipulasi, kecuali jenis final
+
+//Method
+-deklarasi method dilakukan dalam blok Class
+-sifat method di dalam class sama dengan method pad aumumnya
+
+//Construktor
+-method yang akan dipanggil saat pertma onjek dibuat
+-nama construktor harus sama dengan nama class dan tidak butuh void/return value
+
+//Constructor Overloading
+-Konstruktor dapat dibuat lebih dari 1
+-berdasarkan tipe/jumlah parameter yang harus berbeda
+-Bila kode antar konstruktor hampir sama, 
+    konstruktor tersebut dapat memanggil konstruktor lain
+
+//Variabel Shadowing
+-masalah saat nama variabel dan nama parameter nmethod/construktor sama
+-cara mengatasinya dengan menggunakan "this"
+
+//Inheritance
+-kemampuan menurunkan suatu class kedalam class baru lain
+-di java hanya boleh memiliki 1 parent
+-1 parent boleh banyak child
+-semua field dan method dalam kelas parent akan diturunkan kedalam kelas child
+-kata kuncu "extends"
+
+//Method Over riding
+-kemampuan mendeklarasikan ulang method di child class 
+    yang sudah ada di parent class
+-Bila dideklarasikan ulang maka method di parent 
+    tak bisa diakses oleh child class
+
+//Super Keyword
+-untuk mengakses method atau field milik parent
+
+//Super Constructor
+-super dapat juga mengakses konstruktor
+-syarat: untuk akses parent konstruktor maka gunakan konstruktor di child class
+
+//Object Class
+-di java setiap class yang dibuat adalah extends class Object
+
+//Polymorphism
+-kemampuan objek untuk berubah bentuk kedalam bentuk lain
+-sangat erat dengan Inheritance
+        Employee -> Manajer -> Vice President
+
+//Type Check & Cast
+-konversi tipe data
+-dapat dilakukan pada tipe data non primitif
+-diperlukan pengecekan, instanceof
+
+//Variabel Hiding
+-tidak ada variabel overrifding
+-masalah saat nama field di child sama dengan di parent
+-untuk mengatasi digunakan "super"
+
+//Package
+-merupakan suatu folder yang berisi atas beberapa class yang berbeda berdasarkan
+-ketika class disimpan dalam package maka diatas file java harus dideklarasikan nama package
+
+//Akses Modifier
+Modifier                | Class     | Package   | Subclass  | Global|
+
+-public                 | y         | y         | y         |   y    |
+-protected              | y         | y         | y         |   n    |
+-default (no modifier)  | y         | y         | n         |   n    |
+-private                | y         | n         | n         |   n    |
+
+//Import
+-kemampuan untuk menggunakan class yang berada di package berbeda
+-syarat class harus public
+-import semua class dalam package dengan tanda "*"
+    contoh:    
+        import programmer_zaman_now.data.*;
+
+
