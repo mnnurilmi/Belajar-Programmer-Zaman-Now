@@ -97,4 +97,199 @@ Modifier                | Class     | Package   | Subclass  | Global|
     contoh:    
         import programmer_zaman_now.data.*;
 
+//Abstract Class
+-class tidak bisa dibuat sebagai objek secara langsung
+    hanya bisa diturunkan
+-ditandai dengan "abstract"
+
+//Abstract Method
+-saat membuat abstratc class, bisa dibuat abstract method
+-Abstract method dibuat agar child overriding method
+-saat membuat abstract method akses modifier tidak boleh private
+
+//Encapsulation
+-memastikan data sensitif suatu objek tersembunyi dari akses luar
+-digunakan akses modifier pprivate
+-caranya membuat getter dan setter untuk akses data tersebut
+    Tipe             |   getter  |   setter  |
+    ******************************************
+    boolean          |   isXX()  |   setXx() |  
+    primitif/objek   |   getXX() |   setXX() |
+
+//Interface
+-merupakan kontrak dari Interface
+-Di dalam interface seluruhnya abstract
+-Tidak boleh membuat field, hanya boleh memiliki konstan
+-Pewarisan interface menggunakan "implement"
+
+//Interface Inheritance
+-Lebih tepat untuk membuat "kontrak"
+-child boleh implement > 1 inheritance
+-Dari interface ke inheritance menggunakan "extends"
+
+//Default Method
+-Di interface tidak bisa membuat method yang konkrit
+-Di Java 8 terdapat default method
+-default method berfungsi untuk membuat konkrit class
+
+//ToString method
+-digunakan representasi objek dalam bentuk ToString
+    nameclass+@+hashcode
+
+//Equals Method
+-Di java "==" digunakan untuk cek tipe data primitif
+-untuk objek pengecekan pakai "equals()"
+-method equals digunakan untuk membandingkan lokasi si objek di memori
+
+//HashCode method
+-metode representsi integer dari objek, mirip ToString
+-bermanfaat di stuktur data unik, seperti HashMap, Set, dsb.
+-defaultnya mengembalikan nilai integer di memori
+-KOntrak Hashcode:
+    -sebanyak apapun hashcode dipanggil walau objek sama harus menghasilkan data integer yang sama
+    - equals sama hashcode harus sama
+    -equals beda, hashcode boleh berbeda
+
+//Final Class
+-jika class menggunakan "final" maka class
+    tidak bisa diwariskan
+
+//Final Method
+-method tersebut tak bisa dioverride diclass turunannya
+
+
+//Inner Class
+-adalah membuat class di dalam class
+-kasusnya ketika suatu class tidak bisa dibuat tanpa class lain
+-contoh, saat membuat class Employee, butuh class Company, 
+    maka class employee adalah inner child class company
+-Keuntungannya adalah kemampuan mengakses outer class
+    termasuk private member
+-untuk akses objek outer class menggunakna "*.this"
+-untuk akses super outer class menggunakan "*.super"
+
+//Anoymous class
+-kemampuan deklarasi class sekaligus meng-instansiasi objek
+-termasuk inner class dimana outernya adalah tempat dimana membuat anonymous class
+-digunakan saat ingin membuat interface/class tanpa perlu implementasi
+
+//Static Keyword
+-field, method, class, dapat diakses tanpa membuat objeknya
+-static dapat mengakses static lainnya
+-bila inner class dibuat static 
+    maka inner class bisa diakses tanpa membuat objek di outer class
+-kekurangannya adalah ketika dibuat static, objek outer class tak bisa diakses lagi
+-static block akan dieksekusi sekali sebelum class diload
+-digunakan saat membua
+    -helper method
+    =membuat constant
+
+//Static import
+    import static namaclass;
+
+//Record class
+-masih "experimental" di java 14
+-untuk mempermudah pembuatan jenis class, getter, setter, equals, hashcode, ToString
+-bersifat Immutable/ value objek tidak bisa diubah
+-tidak bisa extend class lain
+-bisa implement interface
+    public record namaclass(){}
+
+//Record Constructor
+-saat dibuat objek, harus didefinisikan parameter Constructor
+-wajib memanggil constructor utama
+
+//Enum Class
+-untuk membuat tipe data tak terbatas
+-seperti: gender, tipe consumer, dsb
+-harus ditentukan nilainya
+class enum tak bisa diextend, implement bisa
+
+//Enum members
+-bisa menambahkan field, class, constructor
+-Tidak bisa membuat "public constructor"
+
+//Konversi Enum ke ToString
+-menggunakan 
+    *.name();
+
+//Konversi String ke Enum
+-menggunakan 
+    *.valueOf();
+
+//EXEPTIONS(ERROR)
+-semua jenis error direpresentasikan dalam class
+-dapat membuat jenis error sendiri atau yg sudah disediakan java
+-jika membuat exeption maka harus membuat class yang extends "throwable"
+    super class nya "throwable"
+-biasa terjadi dalam method
+    method harus ditandai dengan "throws" diikuti objek exception
+
+//Try-Catch
+-pasangan exception
+    try{
+        ...
+    }catch(ValidationException e){
+        ...
+    }catch(NullProinterException n){
+        ...
+    }
+
+//Finally Keyword
+
+-Dalam try catch bisa menambahkan block Finally
+-selalu dieksekusi baik ada exception ataupun tidak
+-contoh, 
+    try{
+        ...
+    }catch{
+        ...
+    }finallu{
+        ...(selalu dieksekusi)
+    }
+
+//Runtime exception
+-di java:
+        -Checked exception:
+            exception yang wajib try-catch
+        -Runtime exception
+            exception yang tidak wajib try-catchZ
+            wajib extends RuntimeException
+        -error
+            jenis exception yang tidak direkomendasi di try-catch
+            direkomendasikan untuk mematikan aplikasi
+
+//Stack Trace Element Class
+-thowrowable memiliki method "getStackTrace" dimana 
+    menghasilkan array StackTraceElement Object
+
+//Try with Resource
+-sebuah mekanisme untuk mempermudah menggunakan Resource
+-wajib menggunakan interface "AutoClosable"
+
+//Annotation
+-membuat meta data
+-digunakan saat membuat library/framework
+-menggunakan "@interface"
+    |atribut    |    keteranggan                                |
+    *************************************************************
+    |@target    | memberitahu anotasi bbisa digunakan dimana,   |
+                |   seperti class,method, dsb.
+    |@retention | memberitahu anotasi apakah disimpan di hasil  |
+                |   kompilasi atau bisa dibaca reflection       |
+
+//Predefined Annotation
+    @Overide
+    @Deprecated
+    @FunctionalInterface
+    dsb.
+
+//reflection(otomatisasi pengecekan)
+-kemmampuan melihat stuktur aplikasi saat program berjalan
+-berguna untuk otomatisasi saat membuat librari/framework
+-menggunakan method "getClass()" / "namaclass.class"
+
+
+
+
 
