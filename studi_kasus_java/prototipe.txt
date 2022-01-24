@@ -1,0 +1,10 @@
+-Prototipe adalah bentuk dasar dari suatu aplikasi
+-digunakan untuk mempermudah flow aplikasi yang dibuat
+-yang dibutuhkan:
+    -data
+    -business logic
+    -tamplian
+-TAHAPAN:
+1. Membuat model/representasi data
+2. Menentukan business logic
+3. Menentukan tamplian

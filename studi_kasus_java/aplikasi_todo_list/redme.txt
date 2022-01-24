@@ -1,0 +1,9 @@
+business logic:
+-menampilkan todolist
+-menambah list
+-menghapus list
+
+tampilan:
+-halaman utama
+-halaman tabah list
+-halaman hapus list
